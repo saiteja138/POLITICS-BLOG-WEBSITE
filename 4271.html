@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #eaeaea;
+            color: #333;
+            padding: 20px;
+            background-image: url('https://ghanaraveawards.com/wp-content/uploads/2023/05/Ent.jpg');
+            background-size: cover;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav {
+            flex: 1;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        header img {
+            max-height: 50px;
+            margin-left: 20px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-left: auto;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        /* Main Content */
+        main {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        main article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        main article h2 {
+            margin-bottom: 10px;
+            font-size: 2rem;
+            color: #c0392b;
+        }
+
+        main article .meta {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        main article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main article p {
+            margin-bottom: 15px;
+        }
+
+        main article .read-more {
+            display: inline-block;
+            background-color: #c0392b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        main article .read-more:hover {
+            background-color: #e74c3c;
+        }
+
+        /* Sidebar */
+        aside {
+            flex: 1;
+        }
+
+        aside section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        aside section h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        aside section ul {
+            list-style: none;
+        }
+
+        aside section ul li {
+            margin-bottom: 10px;
+        }
+
+        aside section ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        aside section ul li a:hover {
+            color: #c0392b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            aside {
+                margin-left: 0;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header h1 {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            header nav ul {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Political News</a></li>
+                <li><a href="#">Opinions</a></li>
+                <li><a href="#">Interviews</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="https://dcassetcdn.com/design_img/3244321/439744/439744_17988011_3244321_14b3283c_image.jpg" alt="Logo">
+        <h1>Political Pulse</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <article id="default">
+                <h2>Current Political Climate</h2>
+                <p class="meta">By Saiteja | August 18, 2024</p>
+                <img src="https://dcassetcdn.com/design_img/3244321/439744/439744_17988011_3244321_14b3283c_image.jpg" width="700">
+                <p>"Explore the latest developments in the political landscape. From government policies to international relations, stay informed on the key issues shaping the future."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post1">
+                <h2>Election Coverage</h2>
+                <p class="meta">By Saiteja | August 16, 2024</p>
+                <img src="https://th.bing.com/th/id/OIP.Unc7ln_lKhPgmZ6BG2aD8wHaEK?rs=1&pid=ImgDetMain" alt="Election Image" width="700">
+                <p>"Get in-depth analysis and real-time updates on the upcoming elections. From candidate profiles to voter trends, our coverage provides you with the insights you need to make informed decisions."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post2">
+                <h2>Policy Debates</h2>
+                <p class="meta">By Saiteja | August 17, 2024</p>
+                <img src="https://www.aljazeera.com/wp-content/uploads/2023/11/2023-11-09T025416Z_1031824613_UP1EJB9082B0S_RTRMADP_3_USA-ELECTION-REPUBLICANS-DEBATE-1699498650.jpg?resize=770%2C513&quality=80" alt="Policy Debate Image" width="700">
+                <p>"Dive into the debates surrounding current policies. Understand the arguments on both sides and what they mean for the country's future. Our expert analysis helps you cut through the noise."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post3">
+                <h2>Interviews with Politicians</h2>
+                <p class="meta">By Saiteja | August 18, 2024</p>
+                <img src="https://thumbs.dreamstime.com/b/politician-giving-interview-conference-african-mature-to-journalists-microphones-press-249076173.jpg" alt="Interview Image" width="700">
+                <p>"Get exclusive interviews with key political figures. Learn about their perspectives on current issues, future plans, and what drives their policies. Our interviews provide a deeper understanding of the people behind the headlines."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </main>
+
+        <aside>
+            <section>
+                <h3>Hot Topics</h3>
+                <ul>
+                    <li><a href="#post1">Election Coverage</a></li>
+                    <li><a href="#post2">Policy Debates</a></li>
+                    <li><a href="#post3">Interviews</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Government</a></li>
+                    <li><a href="#">International</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Opinion</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Contact us at: tejabathula13@gmail.com </p>
+        <p>Follow us on 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>
+        </p>
+        <p>&copy; 2024 Political Pulse. All rights reserved.</p>
+    </footer>
+</body>
+</html>
